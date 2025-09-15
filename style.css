@@ -1,0 +1,253 @@
+@font-face {
+    font-family: "bold";
+    src: url(static/NotoSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'reg';
+    src: url(static/NotoSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'med';
+    src: url(static/NotoSans-Medium.ttf);
+}
+
+.bt {
+    background-color: #fff;
+}
+
+.bt:hover {
+    background-color: rgb(201, 34, 25);
+    color: #fff;
+}
+
+body {
+    background-color: rgb(237, 247, 249);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#d1 {
+    background-color: white;
+    height: 100px;
+    width: 1000px;
+    border-radius: 15px;
+
+    #img1 {
+        top: 100%;
+        left: 100%;
+        transform: translate(10%, 15%);
+    }
+
+    #button {
+        width: 50px;
+        height: 50px;
+        top: 100%;
+        left: 100%;
+        transform: translate(1500%, -7%);
+        border-radius: 10px;
+        border: 1px solid rgb(238, 239, 234);
+    }
+}
+
+#d2 {
+    width: 1000px;
+    display: flex;
+    flex-direction: initial;
+    margin-top: 10px;
+
+    h1 {
+        justify-content: flex-start;
+        font-family: 'bold';
+    }
+
+    #bd2 {
+        display: flex;
+        gap: 10px;
+        width: auto;
+        height: 30px;
+        justify-content: flex-end;
+        top: 0%;
+        left: 0%;
+        transform: translate(250%, 100%);
+
+        button {
+            border-radius: 20px;
+            border: 1px solid white;
+            font-family: 'reg';
+        }
+    }
+}
+
+#all {
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    #a1,
+    #a2,
+    #a3,
+    #a4,
+    #a5,
+    #a6,
+    #a7,
+    #a8,
+    #a9,
+    #a10,
+    #a11,
+    #a12 {
+        background-color: white;
+        width: 320px;
+        height: 150px;
+        margin-left: 10px;
+        margin-top: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+
+    #a1,
+    #a2,
+    #a3,
+    #a4,
+    #a5,
+    #a6,
+    #a7,
+    #a8,
+    #a9,
+    #a10,
+    #a11,
+    #a12 {
+        img {
+            margin: 10px;
+        }
+
+        h3 {
+            font-family: 'med';
+            left: 0%;
+            top: 0%;
+            transform: translate(25%, -370%);
+        }
+
+        p {
+            font-family: "reg";
+            font-size: small;
+            left: 0%;
+            top: 0%;
+            transform: translate(25%, -300%);
+            color: rgba(0, 0, 0, 0.5);
+        }
+
+        button {
+            height: 30px;
+            width: 80px;
+            left: 0%;
+            top: 0%;
+            transform: translate(20%, -300%);
+            border-radius: 30px;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+
+            font-weight: 560;
+        }
+
+        .s {
+            position: relative;
+            display: inline-block;
+            width: 40px;
+            height: 20px;
+        }
+
+        .s input {
+            display: none;
+        }
+
+        .sl {
+            position: absolute;
+            cursor: pointer;
+            top: 0%;
+            left: 0%;
+            right: 0%;
+            bottom: 0%;
+            background-color: rgba(164, 163, 163, 0.242);
+            border-radius: 30px;
+        }
+
+        .sl::before {
+            position: absolute;
+            content: "";
+            height: 15px;
+            width: 15px;
+            left: 4px;
+            bottom: 3px;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        input:checked+.sl {
+            background-color: rgb(201, 34, 25);
+        }
+
+        input:checked+.sl::before {
+            transform: translateX(20px);
+        }
+
+        label {
+            top: 100%;
+            left: 100%;
+            transform: translate(-350%, -1155%);
+        }
+    }
+}
+
+#b1 {
+    width: 50px;
+    height: 35px;
+    background-color: white;
+}
+
+#b2 {
+    width: 70px;
+    height: 35px;
+    background-color: white;
+}
+
+#b3 {
+    width: 80px;
+    height: 35px;
+    background-color: white;
+}
+
+#b3:hover {
+    opacity: 0.6;
+}
+
+#b2:hover {
+    opacity: 0.6;
+}
+
+#b1:hover {
+    opacity: 0.6;
+}
+
+#button:hover {
+    background-color: gray;
+}
+#b1:focus
+{
+    background-color: rgb(201, 34, 25);
+    color: white;
+}
+#b2:focus
+{
+    background-color: rgb(201, 34, 25);
+    color: white;
+}
+#b3:focus
+{
+    background-color: rgb(201, 34, 25);
+    color: white;
+}
